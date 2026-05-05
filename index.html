@@ -4,311 +4,300 @@
 
 </head>
 <body>
-    <script language="javascript" type="text/javascript">
-    function dynamicdropdown(listindex)
-    {
-        switch (listindex)
-        {
-        case "Bear1" :
-            document.getElementById("ME").options[0]=new Option("Select bear","");
-            document.getElementById("ME").options[1]=new Option("Bear 9","Bear9-SF");
-            document.getElementById("ME").options[2]=new Option("Bear 1","Bear1-SF");
-            break;
-        case "Bear2" :
-            document.getElementById("ME").options[0]=new Option("Select bear","");
-            document.getElementById("ME").options[1]=new Option("Bear 9","Bear9-SF");
-            document.getElementById("ME").options[2]=new Option("Bear 2","Bear2-SF");
-            break;
+	<script language="javascript" type="text/javascript">
+	function dynamicdropdown(listindex) {
+		switch (listindex) {
+		case "Bear1" :
+	        	document.getElementById("ME").options[0]=new Option("Select bear","");
+	        	document.getElementById("ME").options[1]=new Option("Bear 9","Bear9-SF");
+	        	document.getElementById("ME").options[2]=new Option("Bear 1","Bear1-SF");
+	        	break;
+		case "Bear2" :
+	        	document.getElementById("ME").options[0]=new Option("Select bear","");
+	        	document.getElementById("ME").options[1]=new Option("Bear 9","Bear9-SF");
+	        	document.getElementById("ME").options[2]=new Option("Bear 2","Bear2-SF");
+	        	break;
 
-        case "Bear3" :
-            document.getElementById("MF").options[0]=new Option("Select bear","");
-            document.getElementById("MF").options[1]=new Option("Bear 10","Bear10-SF");
-            document.getElementById("MF").options[2]=new Option("Bear 3","Bear3-SF");
-            break;
-        case "Bear4" :
-            document.getElementById("MF").options[0]=new Option("Select bear","");
-            document.getElementById("MF").options[1]=new Option("Bear 10","Bear10-SF");
-            document.getElementById("MF").options[2]=new Option("Bear 4","Bear4-SF");
-            break;
+		case "Bear3" :
+	        	document.getElementById("MF").options[0]=new Option("Select bear","");
+	        	document.getElementById("MF").options[1]=new Option("Bear 10","Bear10-SF");
+	        	document.getElementById("MF").options[2]=new Option("Bear 3","Bear3-SF");
+	        	break;
+		case "Bear4" :
+	        	document.getElementById("MF").options[0]=new Option("Select bear","");
+	        	document.getElementById("MF").options[1]=new Option("Bear 10","Bear10-SF");
+	        	document.getElementById("MF").options[2]=new Option("Bear 4","Bear4-SF");
+	        	break;
 
-        case "Bear5" :
-            document.getElementById("MG").options[0]=new Option("Select bear","");
-            document.getElementById("MG").options[1]=new Option("Bear 11","Bear11-SF");
-            document.getElementById("MG").options[2]=new Option("Bear 5","Bear5-SF");
-            break;
-        case "Bear6" :
-            document.getElementById("MG").options[0]=new Option("Select bear","");
-            document.getElementById("MG").options[1]=new Option("Bear 11","Bear11-SF");
-            document.getElementById("MG").options[2]=new Option("Bear 6","Bear6-SF");
-            break;
+		case "Bear5" :
+	        	document.getElementById("MG").options[0]=new Option("Select bear","");
+	        	document.getElementById("MG").options[1]=new Option("Bear 11","Bear11-SF");
+	        	document.getElementById("MG").options[2]=new Option("Bear 5","Bear5-SF");
+	        	break;
+		case "Bear6" :
+	        	document.getElementById("MG").options[0]=new Option("Select bear","");
+	        	document.getElementById("MG").options[1]=new Option("Bear 11","Bear11-SF");
+	        	document.getElementById("MG").options[2]=new Option("Bear 6","Bear6-SF");
+	        	break;
 
-        case "Bear7" :
-            document.getElementById("MH").options[0]=new Option("Select bear","");
-            document.getElementById("MH").options[1]=new Option("Bear 12","Bear12-SF");
-            document.getElementById("MH").options[2]=new Option("Bear 7","Bear7-SF");
-            break;
-        case "Bear8" :
-            document.getElementById("MH").options[0]=new Option("Select bear","");
-            document.getElementById("MH").options[1]=new Option("Bear 12","Bear12-SF");
-            document.getElementById("MH").options[2]=new Option("Bear 8","Bear8-SF");
-            break;
+		case "Bear7" :
+	        	document.getElementById("MH").options[0]=new Option("Select bear","");
+	        	document.getElementById("MH").options[1]=new Option("Bear 12","Bear12-SF");
+	        	document.getElementById("MH").options[2]=new Option("Bear 7","Bear7-SF");
+	        	break;
+		case "Bear8" :
+	        	document.getElementById("MH").options[0]=new Option("Select bear","");
+	        	document.getElementById("MH").options[1]=new Option("Bear 12","Bear12-SF");
+	        	document.getElementById("MH").options[2]=new Option("Bear 8","Bear8-SF");
+	        	break;
 
-	//Semifinals. Matchup I
-        case "Bear1-SF" :
-            document.getElementById("MI").options[0]=new Option("Select bear","");
-            document.getElementById("MI").options[1]=new Option("Bear 1","Bear1-F");
-	    break;
+		//Semifinals. Matchup I
+		case "Bear1-SF" :
+	        	document.getElementById("MI").options[0]=new Option("Select bear","");
+	        	document.getElementById("MI").options[1]=new Option("Bear 1","Bear1-F");
+			break;
 
-        case "Bear2-SF" :
-            document.getElementById("MI").options[0]=new Option("Select bear","");
-            document.getElementById("MI").options[1]=new Option("Bear 2","Bear2-F");
-            break;
+		case "Bear2-SF" :
+	        	document.getElementById("MI").options[0]=new Option("Select bear","");
+	        	document.getElementById("MI").options[1]=new Option("Bear 2","Bear2-F");
+	        	break;
+		case "Bear9-SF" :
+	        	document.getElementById("MI").options[0]=new Option("Select bear","");
+	        	document.getElementById("MI").options[1]=new Option("Bear 9","Bear9-F");
+	        	break;
 
-        case "Bear9-SF" :
-            document.getElementById("MI").options[0]=new Option("Select bear","");
-            document.getElementById("MI").options[1]=new Option("Bear 9","Bear9-F");
-            break;
+		case "Bear3-SF" :
+			document.getElementById("MI").options[2]=new Option("Bear 3","Bear3-F");
+			break;
+		case "Bear4-SF" :
+	        	document.getElementById("MI").options[2]=new Option("Bear 4","Bear4-F");
+			break;
+		case "Bear10-SF" :
+	        	document.getElementById("MI").options[2]=new Option("Bear 10","Bear10-F");
+			break;
 
-	case "Bear3-SF" :
-            document.getElementById("MI").options[2]=new Option("Bear 3","Bear3-F");
-	    break;
-	case "Bear4-SF" :
-            document.getElementById("MI").options[2]=new Option("Bear 4","Bear4-F");
-	    break;
-	case "Bear10-SF" :
-            document.getElementById("MI").options[2]=new Option("Bear 10","Bear10-F");
-	    break;
+		//Semifinals. Matchup J
+		case "Bear5-SF" :
+	        	document.getElementById("MJ").options[0]=new Option("Select bear","");
+	        	document.getElementById("MJ").options[1]=new Option("Bear 5","Bear5-F");
+			break;
+	        case "Bear6-SF" :
+	        	document.getElementById("MJ").options[0]=new Option("Select bear","");
+	        	document.getElementById("MJ").options[1]=new Option("Bear 5","Bear6-F");
+	        	break;
+		case "Bear11-SF" :
+			document.getElementById("MJ").options[0]=new Option("Select bear","");
+	        	document.getElementById("MJ").options[1]=new Option("Bear 11","Bear11-F");
+	        	break;
 
-	//Semifinals. Matchup J
-        case "Bear5-SF" :
-            document.getElementById("MJ").options[0]=new Option("Select bear","");
-            document.getElementById("MJ").options[1]=new Option("Bear 5","Bear5-F");
-	    break;
+		case "Bear7-SF" :
+	        	document.getElementById("MJ").options[2]=new Option("Bear 7","Bear7-F");
+			break;
+		case "Bear8-SF" :
+	        	document.getElementById("MJ").options[2]=new Option("Bear 8","Bear8-F");
+			break;
+		case "Bear12-SF" :
+	        	document.getElementById("MJ").options[2]=new Option("Bear 12","Bear12-F");
+			break;
 
-        case "Bear6-SF" :
-            document.getElementById("MJ").options[0]=new Option("Select bear","");
-            document.getElementById("MJ").options[1]=new Option("Bear 5","Bear6-F");
-            break;
+		//Finals. Matchup K
+		case "Bear1-F" :
+	        	document.getElementById("MK").options[0]=new Option("Select bear","");
+	        	document.getElementById("MK").options[1]=new Option("Bear 1","Bear1-W");
+			break;
+		case "Bear2-F" :
+	        	document.getElementById("MK").options[0]=new Option("Select bear","");
+	        	document.getElementById("MK").options[1]=new Option("Bear 2","Bear2-W");
+	        	break;
+		case "Bear3-F" :
+	        	document.getElementById("MK").options[0]=new Option("Select bear","");
+	        	document.getElementById("MK").options[1]=new Option("Bear 9","Bear9-W");
+			break;
+		case "Bear4-F" :
+	        	document.getElementById("MK").options[0]=new Option("Select bear","");
+	        	document.getElementById("MK").options[1]=new Option("Bear 9","Bear9-W");
+			break;
+		case "Bear9-F" :
+	        	document.getElementById("MK").options[0]=new Option("Select bear","");
+	        	document.getElementById("MK").options[1]=new Option("Bear 9","Bear9-W");
+	        	break;
+		case "Bear10-F" :
+	        	document.getElementById("MK").options[0]=new Option("Select bear","");
+	        	document.getElementById("MK").options[1]=new Option("Bear 10","Bear10-W");
+			break;
 
-        case "Bear11-SF" :
-            document.getElementById("MJ").options[0]=new Option("Select bear","");
-            document.getElementById("MJ").options[1]=new Option("Bear 11","Bear11-F");
-            break;
-
-	case "Bear7-SF" :
-            document.getElementById("MJ").options[2]=new Option("Bear 7","Bear7-F");
-	    break;
-	case "Bear8-SF" :
-            document.getElementById("MJ").options[2]=new Option("Bear 8","Bear8-F");
-	    break;
-	case "Bear12-SF" :
-            document.getElementById("MJ").options[2]=new Option("Bear 12","Bear12-F");
-	    break;
-
-	//Finals. Matchup K
-        case "Bear1-F" :
-            document.getElementById("MK").options[0]=new Option("Select bear","");
-            document.getElementById("MK").options[1]=new Option("Bear 1","Bear1-W");
-	    break;
-        case "Bear2-F" :
-            document.getElementById("MK").options[0]=new Option("Select bear","");
-            document.getElementById("MK").options[1]=new Option("Bear 2","Bear2-W");
-            break;
-	case "Bear3-F" :
-            document.getElementById("MK").options[0]=new Option("Select bear","");
-            document.getElementById("MK").options[1]=new Option("Bear 9","Bear9-W");
-	    break;
-	case "Bear4-F" :
-            document.getElementById("MK").options[0]=new Option("Select bear","");
-            document.getElementById("MK").options[1]=new Option("Bear 9","Bear9-W");
-	    break;
-        case "Bear9-F" :
-            document.getElementById("MK").options[0]=new Option("Select bear","");
-            document.getElementById("MK").options[1]=new Option("Bear 9","Bear9-W");
-            break;
-	case "Bear10-F" :
-            document.getElementById("MK").options[0]=new Option("Select bear","");
-            document.getElementById("MK").options[1]=new Option("Bear 10","Bear10-W");
-	    break;
-
-	case "Bear5-F" :
-            document.getElementById("MK").options[2]=new Option("Bear 5","Bear5-w");
-	    break;
-	case "Bear6" :
-            document.getElementById("MK").options[2]=new Option("Bear 6","Bear6-W");
-	    break;
-	case "Bear7-F" :
-            document.getElementById("MK").options[2]=new Option("Bear 7","Bear7-W");
-	    break;
-	case "Bear8-F" :
-            document.getElementById("MK").options[2]=new Option("Bear 8","Bear8-W");
-	    break;
-	case "Bear11-F" :
-            document.getElementById("MK").options[2]=new Option("Bear 11","Bear11-W");
-	    break;
-	case "Bear12-F" :
-            document.getElementById("MK").options[2]=new Option("Bear 12","Bear12-W");
-	    break;
-        }
+		case "Bear5-F" :
+	        	document.getElementById("MK").options[2]=new Option("Bear 5","Bear5-w");
+			break;
+		case "Bear6" :
+	        	document.getElementById("MK").options[2]=new Option("Bear 6","Bear6-W");
+			break;
+		case "Bear7-F" :
+	        	document.getElementById("MK").options[2]=new Option("Bear 7","Bear7-W");
+			break;
+		case "Bear8-F" :
+	        	document.getElementById("MK").options[2]=new Option("Bear 8","Bear8-W");
+			break;
+		case "Bear11-F" :
+	        	document.getElementById("MK").options[2]=new Option("Bear 11","Bear11-W");
+			break;
+		case "Bear12-F" :
+	        	document.getElementById("MK").options[2]=new Option("Bear 12","Bear12-W");
+			break;
+	        }
         return true;
-    }
-    </script>
+	}
+	</script>
 
 	<style>
 	.two {
 		background-color: lightblue;
 	}
-
 	.tops {
 		display: flex;
   		justify-content: center;
   		align-items: center;
 		background-color: lightblue;
 	}
-
 	.tops2 {
 		width: 40em;
 		background-color: blue;
 	}
-
 	.semis {
 		width: 30em;
 		background-color: red;
 	}
-
 	</style>
 
 	<!--Half-Leaves-->
 
-    <div class="two">
-	<!--Leaves-->
-	<select style="float:left;" name="Matchup A" id="MA" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-		<option value="">Select Bear</option>
-		<option value="Bear1">bear 1</option>
-    		<option value="Bear2">bear 2</option>
-	</select>
+	<div class="two">
+		<!--Leaves-->
+		<select style="float:left;" name="Matchup A" id="MA" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+			<option value="">Select Bear</option>
+			<option value="Bear1">bear 1</option>
+	    		<option value="Bear2">bear 2</option>
+		</select>
 
-	<select style="float:right;" name="Matchup C" id="MC" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-		<option value="">Select Bear</option>
-		<option value="Bear5">bear 5</option>
-    		<option value="Bear6">bear 6</option>
-	</select>
+		<select style="float:right;" name="Matchup C" id="MC" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+			<option value="">Select Bear</option>
+			<option value="Bear5">bear 5</option>
+	    		<option value="Bear6">bear 6</option>
+		</select>
 	</div>
 
-<div class="tops">
-<div class="tops2">
-    <script type="text/javascript" language="JavaScript">
-	    document.write('<select style="float:left;" name="Matchup E" id="ME" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-    </script>
-
-    	<script type="text/javascript" language="JavaScript">
-        	document.write('<select style="float:right" name="Matchup G" id="MG" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-        </script>
-
-    </div>
-    </div>
-
-	<!--Semifinals-->
 	<div class="tops">
-	<div class="semis">
-	<script type="text/javascript" language="JavaScript">
-        	document.write('<select style="float:left;" name="Matchup I" id="MI" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-        </script>
+		<div class="tops2">
+			<script type="text/javascript" language="JavaScript">
+				document.write('<select style="float:left;" name="Matchup E" id="ME" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+			</script>
 
-	<script type="text/javascript" language="JavaScript">
-        	document.write('<select style="float:right;" name="Matchup J" id="MJ" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-        </script>
+			<script type="text/javascript" language="JavaScript">
+		        	document.write('<select style="float:right" name="Matchup G" id="MG" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+			</script>
 
-    <div class="tops">
-	<!--Finals-->
-	<script type="text/javascript" language="JavaScript">
-        	document.write('<select name="Matchup K" id="MK" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-        </script>
-	</div>
-    </div>
-    </div>
-
-
-    <div class="two">
-	<select style="float:left;" name="matchup" id="MB" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-		<option value="">Select Bear</option>
-		<option value="Bear3">bear 3</option>
-    		<option value="Bear4">bear 4</option>
-	</select>
-
-
-	<select style="float:right;" name="Matchup D" id="MD" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-		<option value="">Select Bear</option>
-		<option value="Bear7">bear 7</option>
-    		<option value="Bear8">bear 8</option>
-	</select>
+		</div>
 	</div>
 
-<div class="tops">
-<div class="tops2">
+	<div class="tops">
+		<div class="semis">
+			<!--Semifinals-->
+			<script type="text/javascript" language="JavaScript">
+		        	document.write('<select style="float:left;" name="Matchup I" id="MI" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+			</script>
 
-    <script type="text/javascript" language="JavaScript">
-	    document.write('<select style="float:left;" name="Matchup F" id="MF" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-    </script>
+			<div class="tops">
+				<!--Finals-->
+				<script type="text/javascript" language="JavaScript">
+		        		document.write('<select name="Matchup K" id="MK" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+				</script>
+			</div>
 
-	<script type="text/javascript" language="JavaScript">
-        	document.write('<select style="float:right" name="Matchup H" id="MH" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-        </script>
-    </div>
-    </div>
-<form>
-  <label for="Name">Full Name:</label><br>
-  <input type="text" id="Name" name="Name"><br>
+			<!--Semifinals-->
+			<script type="text/javascript" language="JavaScript">
+		        	document.write('<select style="float:right;" name="Matchup J" id="MJ" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+			</script>
+		</div>
+	</div>
 
+
+		<div class="two">
+			<select style="float:left;" name="matchup" id="MB" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+				<option value="">Select Bear</option>
+				<option value="Bear3">bear 3</option>
+	    			<option value="Bear4">bear 4</option>
+			</select>
+
+
+			<select style="float:right;" name="Matchup D" id="MD" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+				<option value="">Select Bear</option>
+				<option value="Bear7">bear 7</option>
+	    			<option value="Bear8">bear 8</option>
+			</select>
+		</div>
+
+	<div class="tops">
+		<div class="tops2">
+			<script type="text/javascript" language="JavaScript">
+				document.write('<select style="float:left;" name="Matchup F" id="MF" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+			</script>
+
+			<script type="text/javascript" language="JavaScript">
+				document.write('<select style="float:right" name="Matchup H" id="MH" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+			</script>
+		</div>
+	</div>
+
+	<form>
+		<label for="Name">Full Name:</label><br>
+		<input type="text" id="Name" name="Name"><br>
+	</form>
 
 	<!--Download Button-->
+	<button onclick="downloadItems()">Download</button>
 
-
-    <button onclick="downloadItems()">Download</button>
-
-    <script>
+	<script>
 	function downloadItems() {
 
 		//Gets text from text areas
 		const Name = document.getElementById('Name').value.trim();
 
 		//Gets text from dropdowns
-	    const dropdowns = [
-                document.getElementById('MA'),
-                document.getElementById('MB'),
-                document.getElementById('MC'),
-                document.getElementById('MD'),
-                document.getElementById('ME'),
-                document.getElementById('MF'),
-                document.getElementById('MG'),
-                document.getElementById('MH'),
-                document.getElementById('MI'),
-                document.getElementById('MJ'),
-                document.getElementById('MK')
-            ];
+		const dropdowns = [
+        		document.getElementById('MA'),
+        		document.getElementById('MB'),
+        	        document.getElementById('MC'),
+        	        document.getElementById('MD'),
+        	        document.getElementById('ME'),
+        	        document.getElementById('MF'),
+        	        document.getElementById('MG'),
+        	        document.getElementById('MH'),
+        	        document.getElementById('MI'),
+        	        document.getElementById('MJ'),
+        	        document.getElementById('MK')
+            	];
 
-            //Combines texts
-            let selectedTexts = [];
-		selectedTexts.push(`Name: ${Name}`);
+		//Combines texts
+		let selectedTexts = [];
 
-            dropdowns.forEach((dropdown, index) => {
-                const selectedText = dropdown.options[dropdown.selectedIndex].text;
-		    selectedTexts.push(`M${String.fromCharCode(index + 65)}: ${selectedText}`);
-            });
+		selectedTexts.push(`Name: ${Name}`)
+		dropdowns.forEach((dropdown, index) => {
+		const selectedText = dropdown.options[dropdown.selectedIndex].text;
+			selectedTexts.push(`M${String.fromCharCode(index + 65)}: ${selectedText}`);
+		})
 
-            const combinedText = selectedTexts.join('\n');
+		const combinedText = selectedTexts.join('\n')
 
-
-            //Creates and download file
-            const blob = new Blob([combinedText], { type: 'text/plain' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url;
+		//Creates and download file
+		const blob = new Blob([combinedText], { type: 'text/plain' });
+		const url = URL.createObjectURL(blob);
+		const a = document.createElement('a');
+		a.href = url;
 		a.download = `${Name}.fbb`;
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
+		document.body.appendChild(a);
+		a.click();
+		document.body.removeChild(a);
+		URL.revokeObjectURL(url);
         }
     </script>
 
