@@ -7,110 +7,140 @@
 	<script type="text/javascript" src="bears.js"></script>
 
 	<style>
-	.two {
-		background-color: lightblue;
+	.title {
+		height: 7em;
 	}
-	.tops {
+	.bracket {
+		padding: 0em 5%;
+	}
+	.two {
+		padding: 0em 0em 5em;
+	}
+	.circle {
+		background-color: #EF4D87;
 		display: flex;
   		justify-content: center;
   		align-items: center;
-		background-color: lightblue;
+		height: auto;
+		width: auto;
+		padding: 0.5em;
+		border-radius: 0.5em;
 	}
-	.tops2 {
-		width: 40em;
-		background-color: blue;
+	.middles {
+		padding: 0em 10% 5em;
 	}
-	.semis {
-		width: 30em;
-		background-color: red;
+	.tops {
+		padding: 0em 25% 5em;
+	}
+	.winner {
+		position:relative;
+		display: flex;
+  		justify-content: center;
+  		align-items: center;
 	}
 	</style>
 
-	<div class="two">
-		<!--Leaves-->
-		<select style="float:left;" name="Matchup A" id="MA" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-			<option value="">Select Bear</option>
-			<option value="Bear1">bear 1</option>
-	    		<option value="Bear2">bear 2</option>
-		</select>
+	<div class="title">
+		<form>
+			<label for="Name">Full Name:</label><br>
+			<input type="text" id="Name" name="Name"><br>
+		</form>
 
-		<select style="float:right;" name="Matchup C" id="MC" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-			<option value="">Select Bear</option>
-			<option value="Bear5">bear 5</option>
-	    		<option value="Bear6">bear 6</option>
-		</select>
+		<!--Download Button-->
+		<button onclick="downloadItems()">Download</button>
 	</div>
+	<div class="bracket">
 
-	<div class="tops">
-		<div class="tops2">
-			<script type="text/javascript" language="JavaScript">
-				document.write('<select style="float:left;" name="Matchup E" id="ME" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-			</script>
-
-			<script type="text/javascript" language="JavaScript">
-		        	document.write('<select style="float:right" name="Matchup G" id="MG" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-			</script>
-
+		<div class="two">
+			<!--Leaves-->
+			<div style="float:left;" class="circle">
+				<select name="Matchup A" id="MA" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+					<option value="">Select Bear</option>
+					<option value="Bear1">bear 1</option>
+	    				<option value="Bear2">bear 2</option>
+				</select>
+			</div>
+			<div style="float:right;" class="circle">
+				<select name="Matchup C" id="MC" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+					<option value="">Select Bear</option>
+					<option value="Bear5">bear 5</option>
+	    				<option value="Bear6">bear 6</option>
+				</select>
+			</div>
 		</div>
-	</div>
 
-	<div class="tops">
-		<div class="semis">
-			<!--Semifinals-->
-			<script type="text/javascript" language="JavaScript">
-		        	document.write('<select style="float:left;" name="Matchup I" id="MI" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-			</script>
-
-
-			<!--Semifinals-->
-			<script type="text/javascript" language="JavaScript">
-		        	document.write('<select style="float:right;" name="Matchup J" id="MJ" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-			</script>
-
-			<div class="tops">
-				<!--Finals-->
+		<div class="middles">
+			<div style="float:left;" class="circle">
 				<script type="text/javascript" language="JavaScript">
-		        		document.write('<select name="Matchup K" id="MK" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+					document.write('<select style="float:left;" name="Matchup E" id="ME" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+				</script>
+			</div>
+
+			<div style="float:right;" class="circle">
+				<script type="text/javascript" language="JavaScript">
+		        		document.write('<select style="float:right" name="Matchup G" id="MG" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
 				</script>
 			</div>
 		</div>
-	</div>
+
+		<div class="tops">
+			<div class="winner">
+				<div class="circle">
+					<script type="text/javascript" language="JavaScript">
+		        			document.write('<select name="Matchup K" id="MK" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+					</script>
+				</div>
+			</div>
+
+			<div style="float:left;" class="circle">
+				<script type="text/javascript" language="JavaScript">
+		        		document.write('<select style="float:left;" name="Matchup I" id="MI" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+				</script>
+			</div>
+
+			<div style="float:right;" class="circle">
+				<script type="text/javascript" language="JavaScript">
+		        		document.write('<select style="float:right;" name="Matchup J" id="MJ" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+				</script>
+			</div>
+
+		</div>
+
+
+		<div class="middles">
+			<div style="float:left;" class="circle">
+				<script type="text/javascript" language="JavaScript">
+					document.write('<select style="float:left;" name="Matchup F" id="MF" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+				</script>
+			</div>
+
+			<div style="float:right;" class="circle">
+				<script type="text/javascript" language="JavaScript">
+					document.write('<select style="float:right" name="Matchup H" id="MH" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
+				</script>
+			</div>
+		</div>
 
 
 		<div class="two">
-			<select style="float:left;" name="matchup" id="MB" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-				<option value="">Select Bear</option>
-				<option value="Bear3">bear 3</option>
-	    			<option value="Bear4">bear 4</option>
-			</select>
+				<div style="float:left;" class="circle">
+					<select name="Matchup B" id="MB" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+						<option value="">Select Bear</option>
+						<option value="Bear3">bear 3</option>
+	    					<option value="Bear4">bear 4</option>
+					</select>
+				</div>
 
 
-			<select style="float:right;" name="Matchup D" id="MD" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
-				<option value="">Select Bear</option>
-				<option value="Bear7">bear 7</option>
-	    			<option value="Bear8">bear 8</option>
-			</select>
-		</div>
-
-	<div class="tops">
-		<div class="tops2">
-			<script type="text/javascript" language="JavaScript">
-				document.write('<select style="float:left;" name="Matchup F" id="MF" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-			</script>
-
-			<script type="text/javascript" language="JavaScript">
-				document.write('<select style="float:right" name="Matchup H" id="MH" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);"><option value="">Select Previous Bear</option></select>')
-			</script>
+				<div style="float:right;" class="circle">
+					<select name="Matchup D" id="MD" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);">
+						<option value="">Select Bear</option>
+						<option value="Bear7">bear 7</option>
+	    					<option value="Bear8">bear 8</option>
+					</select>
+				</div>
 		</div>
 	</div>
-
-	<form>
-		<label for="Name">Full Name:</label><br>
-		<input type="text" id="Name" name="Name"><br>
-	</form>
-
-	<!--Download Button-->
-	<button onclick="downloadItems()">Download</button>
 
 	<script>
 	function downloadItems() {
@@ -156,12 +186,5 @@
 		URL.revokeObjectURL(url);
         }
     </script>
-
-
-
-
-
-
-
 </body>
 </html>
